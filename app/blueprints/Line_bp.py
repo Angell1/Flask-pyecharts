@@ -70,6 +70,8 @@ def create_mulline():
             .set_global_opts(
                 title_opts=opts.TitleOpts(title=data['maintitle']),
         )
+        .set_colors()
+        .set_series_opts()
     )
     for i in range(len(data['typelist'])):
         line.add_yaxis(data['typelist'][i],data['yaxis'][i])
